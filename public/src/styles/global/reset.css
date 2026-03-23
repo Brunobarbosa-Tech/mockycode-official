@@ -1,0 +1,85 @@
+/* Variavéis de cores e fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+    --color-neutral-0: #ffffff;
+    --color-neutral-1: #bbbbbb;
+    --color-neutral-2: #D1D5DB;
+    --color-neutral-3: #888888;
+    --color-neutral-4: #292929;
+    --color-neutral-5: #1A1A22;
+    --color-neutral-6: #000000;
+    --color-neutral-7: #050507;
+
+    --color-primary-1: #5FD0E6;
+    --color-primary-2: #00c2ff;
+    --color-primary-3: #7B61FF;
+    --color-primary-4: #a3ffb0;
+    --color-primary-5: #acff9e;
+    --color-primary-6: #A8FF60;
+    --color-primary-7: #245c42;
+
+    --color-secondary-1: #f5c518;
+    --color-secondary-2: #E11D48;
+
+    --font-1: "Poppins", sans-serif;
+    --font-text: "Montserrat", sans-serif;
+}
+
+/* Formatação */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+/* animação fundo  */
+
+body {
+    min-height: 100vh;
+}
+
+/* Classe Interface */
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* Botões */
+
+.testimonials_content button,
+.btn-contato button {
+    width: 140px;
+    height: 50px;
+}
+
+/* .hero-site button, */
+
+.testimonials_content button,
+.btn-contato button {
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 1px solid var(--color-primary-1);
+    color: var(--color-primary-1);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.testimonials_content button,
+.btn-contato button:hover,
+.consultoria button:hover {
+    color: var(--color-neutral-0);
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
