@@ -1,5 +1,17 @@
 /* Responsivo Menu */
 
+/* @media screen and (max-width: 900px) {
+
+    header .menu-desktop,
+    header .btn-contato {
+        display: none;
+    }
+
+    header .btn-mobile {
+        display: block;
+    }
+} */
+
 @media screen and (max-width: 900px) {
 
     header .menu-desktop,
@@ -9,6 +21,15 @@
 
     header .btn-mobile {
         display: block;
+    }
+
+    header .interface {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
     }
 }
 
@@ -22,7 +43,7 @@
 
     .txt-hero {
         margin-top: 25rem;
-        overflow: visible;
+        /* overflow: visible; */
     }
 
     .hero-site {
@@ -47,12 +68,13 @@
     }
 
     .robo-3d {
-        position: absolute;
+        /* position: absolute;
         width: 300px;
         height: 300px;
         top: 18%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%); */
+        display: none;
     }
 
 }
@@ -85,39 +107,6 @@
         width: 30%;
     }
 }
-
-/* @media screen and (max-width: 878px) {
-
-    .testimonials {
-        min-height: auto;
-        padding: 60px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonials_content {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px; 
-    }
-
-    .feedback {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .testimonials button {
-        margin-top: 20px;
-    }
-
-    .testimonials_robo {
-        width: 30%;
-    }
-} */
 
 /* Responsivo Serviços */
 
@@ -180,7 +169,7 @@
     /* Sessão Instruções */
 
     .txt-funciona,
-    .instrucoes {
+    .como-funciona .instrucoes {
         display: block;
         width: 100%;
     }
@@ -196,6 +185,41 @@
     }
 
     .instrucoes .instru-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* instruções 2 */
+
+    .como-funciona-2 .interface {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .como-funciona-2 .txt-funciona,
+    .como-funciona-2 .instrucoes {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .como-funciona-2 .txt-funciona {
+        position: static;
+        text-align: center;
+        padding: 0;
+    }
+
+    .como-funciona-2 .txt-funciona h3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto  40px auto;
+        font-size: 3em;
+        line-height: 50px;
+    }
+
+    .como-funciona-2 .instrucoes .instru-box {
         flex-direction: column;
         text-align: center;
     }
